@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Carolina Virtual Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Coastal Carolina Self-Service Virtual Guide</h1>
+        <p>Click a section below to expand the tutorial information and view screenshots.</p>
+    </header>
+
+    <div class="container">
+        <div class="section-card">
+            <div class="section-header" onclick="toggleSection('progress')">
+                <span>📊 My Progress</span>
+                <span class="icon" id="progress-icon">+</span>
+            </div>
+            <div id="progress" class="section-content">
+                
+                <h3>Part 1: At a Glance</h3>
+                <p>The top of the page provides your high-level academic standing.</p>
+                
+                <img src="images/Screenshot 2026-02-23 001232.png" alt="My Progress At a Glance" class="tutorial-img">
+                
+                <p><strong>Key Information Visible:</strong></p>
+                <ul>
+                    <li><strong>GPA:</strong> View both Cumulative and Institution GPA.</li>
+                    <li><strong>Degree/Major/Minor:</strong> Confirms your declared Bachelor of Science in IT with an ATECH minor.</li>
+                    <li><strong>Credits:</strong> Visual bars tracking your total credits toward graduation.</li>
+                </ul>
+
+                <hr class="divider">
+
+                <h3>Part 2: Core Requirements (General Education)</h3>
+                <p>Below the summary, you will find the <strong>Core Requirements</strong>. These are your General Education sections required for every student regardless of major.</p>
+                
+                <img src="images/genedss.png" alt="Core Requirements Screenshot" class="tutorial-img">
+                
+                <p><strong>How to Read This Section:</strong></p>
+                <ul>
+                    <li><strong>Section Status:</strong> When a header says <span class="text-green">"Completed"</span> with a green checkmark, it means you have fully satisfied that specific Gen-Ed category.</li>
+                    <li><strong>Show Details:</strong> Click the "Show Details" link on any section to see exactly which course you took to fulfill the requirement or which course you currently have "Planned" for the future.</li>
+                    <li><strong>Fulfillment Logic:</strong> Each section lists the specific number of credits required to move that status to complete.</li>
+                </ul>
+
+                <hr class="divider">
+
+                <h3>Part 3: Major Requirements</h3>
+                <p>This section lists the specific courses required for your degree. This area will look different for every major.</p>
+                
+                <img src="images/major-requirments.png" alt="Major Requirements Screenshot" class="tutorial-img">
+                
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li><strong>Search Button:</strong> Click the blue <span class="text-teal">"Search"</span> button to see all available classes that satisfy that specific requirement.</li>
+                    <li><strong>Status:</strong> Sections will mark as <span class="text-green">Completed</span>, <span class="text-blue">In-Progress</span>, or <span class="text-bronze">Planned</span>.</li>
+                </ul>
+                <h3>Part 4: Other Courses</h3>
+                <p>The "Other Courses" section acts as a catch-all for any credits that do not directly fulfill a specific General Education or Major requirement.</p>
+                
+                <img src="images/other-courses.png" alt="Other Courses Screenshot" class="tutorial-img">
+                
+                <p><strong>What is found in this section:</strong></p>
+                <ul>
+                    <li><strong>Course Variety:</strong> This includes courses you have <strong>taken</strong>, <strong>planned</strong> for future semesters, <strong>dropped</strong> (W grades), or <strong>placed into</strong> (like developmental math or English).</li>
+                    <li><strong>Non-Required Credits:</strong> These courses are <strong>not required</strong> for your specific major program, but the credits still count toward your total 120 hours needed to graduate.</li>
+                    <li><strong>Self-Correction:</strong> If you see a course here that you believe *should* be counting toward your major, it usually means you need to contact the Registrar or your Advisor to request a "Substitution."</li>
+                    <li><strong>Status Legend:</strong> Like other sections, these will show a grade if completed, or a "Planned" status if you're just thinking about taking them.</li>
+                </ul>
+
+                <hr class="divider">
+
+                <div class="tutorial-footer">
+                    <h4>🎓 Module Wrap-Up & Support</h4>
+                    <p>By regularly checking "My Progress," you ensure you're on the right track for graduation. This dashboard is your official record—keep an eye on <strong>Completed</strong> vs. <strong>Planned</strong> statuses to avoid any senior-year surprises.</p>
+                    
+                    <div class="support-content">
+                        <p><strong>Still have questions?</strong> If your requirements look incorrect or you need a course substitution, contact your advisor or the Registrar's office immediately.</p>
+                        <div class="contact-buttons">
+                            <a href="https://www.coastal.edu/academics/academicadvising/" class="btn">Email Your Advisor</a>
+                            <a href="https://www.coastal.edu/registrar/registeringforclasses/registrationfrequentlyaskedquestions/" class="btn secondary">Registrar FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="section-card">
+            <div class="section-header" onclick="toggleSection('timeline')">
+                <span>⏳ Timeline</span>
+                <span class="icon" id="timeline-icon">+</span>
+            </div>
+            <div id="timeline" class="section-content">
+                <h3>Visualizing Your Academic Journey</h3>
+                <p>The Timeline view provides a chronological map of your entire college career. It is the most effective way to manage your course load across multiple years.</p>
+                
+                <img src="images/timeline-overview.png" alt="Academic Timeline Overview" class="tutorial-img">
+                
+                <p><strong>Strategic Benefits of the Timeline:</strong></p>
+                <ul>
+                    <li><strong>Plan the Future:</strong> You can add "Planned" terms for future years (e.g., Spring 2027) to map out exactly when you intend to take specific major requirements, ensuring you graduate on time.</li>
+                    <li><strong>Review the Past:</strong> The timeline keeps a permanent record of courses you have already completed, displaying your final grades and the total credits earned for each semester.</li>
+                    <li><strong>Credit Load Management:</strong> At the bottom of each term, you can see the total number of "Enrolled" or "Planned" credits. This helps you balance your schedule to avoid being under-enrolled or overwhelmed.</li>
+                    <li><strong>Status Indicators:</strong> 
+                        <ul>
+                            <li><strong>Checkmark icons:</strong> Indicate courses that are successfully completed or currently in progress.</li>
+                            <li><strong>Dark Gray boxes:</strong> Represent courses you have planned but have not yet registered for.</li>
+                        </ul>
+                    </li>
+                    <li><strong>GPA Tracking:</strong> View your semester-specific GPA at a glance for every term you have completed.</li>
+                </ul>
+
+                <hr class="divider">
+
+                <div class="tutorial-footer">
+                    <h4>🎓 Timeline Pro-Tip</h4>
+                    <p>Use the <strong>"Add a Term"</strong> button to experiment with different course sequences. Seeing your degree mapped out year-by-year helps reduce registration stress and clarifies your path to the finish line.</p>
+                    
+                    <div class="support-content">
+                        <p><strong>Need help adjusting your plan?</strong> Your academic advisor can see your planned timeline and help you determine if your course sequence is optimal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-card">
+            <div class="section-header" onclick="toggleSection('registration')">
+                <span>📝 Registration</span>
+                <span class="icon" id="registration-icon">+</span>
+            </div>
+            <div id="registration" class="section-content">
+                <h3>Step 1: Check Your Registration Window</h3>
+                <p>Before searching for classes, you must identify your authorized registration window. This alert will appear at the top of your registration page.</p>
+                
+                <img src="images/registration-alert.png" alt="Registration Period Alert" class="tutorial-img">
+                
+                <p><strong>Key Information to Note:</strong></p>
+                <ul>
+                    <li><strong>Specific Start Time:</strong> In the screenshot the registration for Fall Semester 2026 begins on <strong>4/7/2026 at 11:00 AM</strong>.This will be different for most studnets as it depends on credit hours, year, etc...</li>
+                    <li><strong>Authorization:</strong> You cannot submit your schedule or enroll in classes before this exact date and time.</li>
+                    <li><strong>Section Variances:</strong> Be aware that some specific course sections may have different registration dates than the general term.</li>
+                    <li><strong>Action Required:</strong> Always review the specific section details below this alert to identify any variances that might affect your specific plan.</li>
+                </ul>
+
+                <hr class="divider">
+
+                <div class="tutorial-footer">
+                    <h4>🎓 Registration Pro-Tip</h4>
+                    <p>Mark this date and time on your personal calendar! Popular classes fill up within minutes of the registration window opening. Having your <strong>Timeline</strong> fully planned out beforehand will allow you to register with just a few clicks the moment your window opens.</p>
+                    
+                    
+                    <hr class="divider">
+
+                <h3>Step 2: Reviewing Your Planned Schedule</h3>
+                <p>Once you have added sections to your plan, they will appear in the <strong>Schedule</strong> tab. This is your final staging area before officially enrolling.</p>
+                
+                <img src="images/registration-schedule.png" alt="Registration Schedule View" class="tutorial-img">
+                
+                <p><strong>Navigating the Schedule Tab:</strong></p>
+                <ul>
+                    <li><strong>Planned List:</strong> All courses you intend to register for are listed on the <strong>left-hand side</strong>. You can click "View other sections" here if you need to swap a class time due to a conflict.</li>
+                    <li><strong>Credit Tracker:</strong> In the top-right corner, you can track your status at a glance:
+                        <ul>
+                            <li><strong>Planned:</strong> Credits you have added to your staging list but are NOT yet registered for.</li>
+                            <li><strong>Enrolled:</strong> Credits you have successfully registered for (these will appear green on your calendar).</li>
+                            <li><strong>Waitlisted:</strong> Credits for classes that were full where you are currently in line for a seat.</li>
+                        </ul>
+                    </li>
+                    <li><strong>The "Missing" Register Button:</strong> Under normal circumstances, you would see a large <strong>Blue Registration Button</strong> at the top of this page. However, because your registration window (identified in Step 1) has not started yet, this button is hidden. It will only appear at your exact authorized time.</li>
+                    <li><strong>Visual Calendar:</strong> Use the main calendar view to ensure your planned classes don't overlap. Planned classes typically appear in <strong>yellow/gray</strong>, while Enrolled classes turn <strong>green</strong>.</li>
+                </ul>
+
+                <hr class="divider">
+
+                <div class="tutorial-footer">
+                    <h4>🎓 Final Checklist</h4>
+                    <p>Before your registration time hits, make sure your "Planned" credit total matches your target (usually 15-18 credits). If you see <strong>"No sections available"</strong> for a course, you must find an alternative section or class before your window opens!</p>
+                    
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="suggestion-card">
+            <div class="suggestion-header">
+                <span>💡 Suggest a New Tutorial Topic</span>
+            </div>
+            <div class="suggestion-body">
+                <p>Is there a part of the Self-Service portal that is still confusing? Let us know what we should add to this guide next!</p>
+                <form id="suggestionForm">
+                    <div class="form-group">
+                        <label for="topic">Area of Confusion:</label>
+                        <input type="text" id="topic" name="topic" placeholder="e.g., How to view my e-Bill..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Additional Details:</label>
+                        <textarea id="details" name="details" rows="3" placeholder="Tell us more about what you're looking for..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Suggestion</button>
+                </form>
+                <div id="formFeedback" class="form-feedback"></div>
+            </div>
+        </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
